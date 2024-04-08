@@ -1,0 +1,48 @@
+     [           {
+        "id": 1,
+        "profileImage": "assets/img/profile1.jpg",
+        "profileName": "Priyanka",
+        "age": 25,
+        "height": "5 ft 2 in",
+        "studied": "BE, Engineer",
+        "star": "Poram",
+        "religion": "Hindu",
+        "caste": "Kayastha",
+        "city": "Coimbatore",
+        "state": "TamilNadu",
+        "verified": true,
+        "premium": true
+        },
+        {
+            "id": 2,
+            "profileImage": "assets/img/profile2.jpg",
+            "profileName": "Indhu Uma",
+            "age": 27,
+            "height": "5 ft 6 in",
+            "studied": "MBBS, Doctor",
+            "star": "Poosam",
+            "religion": "Hindu",
+            "caste": "Kayastha",
+            "city": "Chennai",
+            "state": "TamilNadu",
+            "verified": true,
+            "premium": true
+            },{
+                "id": 3,
+                "profileImage": "assets/img/profile3.jpg",
+                "profileName": "Divya",
+                "age": 27,
+                "height": "5 ft 5 in",
+                "studied": "BA, Arts",
+                "star": "Thiruvathurai",
+                "religion": "Hindu",
+                "caste": "Kayastha",
+                "city": "Chennai",
+                "state": "TamilNadu",
+                "verified": true,
+                "premium": true
+                }
+    ]
+
+
+
