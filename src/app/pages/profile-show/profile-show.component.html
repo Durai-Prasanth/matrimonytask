@@ -1,0 +1,92 @@
+<div
+  class="profile-card-frame"
+  [@cardAnimator]="animationState"
+  (@cardAnimator.done)="resetAnimationState($event)"
+  (swipeleft)="startAnimation('swipeleft')"
+  (swiperight)="startAnimation('swiperight')"
+>
+  <div *ngFor="let userData of userDataList">
+    <mat-card class="example-card">
+      <img
+        mat-card-image
+        [src]="userData.profileImage"
+        class="profileImage"
+        alt="Photo of a Shiba Inu"
+      />
+      <mat-card-content>
+        <p>
+          <span class="verified-icon"
+            ><mat-icon aria-hidden="false" aria-label="Example home icon"
+              >verified_user</mat-icon
+            >Verifed</span
+          >
+          <span class="premium-icon"
+            ><mat-icon aria-hidden="false" aria-label="Example home icon"
+              >stars</mat-icon
+            >Premium NRI</span
+          >
+        </p>
+        <h1 class="m-0">
+          <b>{{ userData.profileName }}</b>
+        </h1>
+        <p class="m-0">
+          <span>{{ userData.age }}</span
+          >, <span>{{ userData.height }}</span
+          >, <span>{{ userData.studied }}</span
+          >, <span>{{ userData.caste }}</span
+          >,
+        </p>
+        <p class="m-0">
+          <span>{{ userData.religion }}</span
+          >, <span>{{ userData.city }}</span
+          >,
+        </p>
+        <p class="m-0">
+          <span>{{ userData.state }}</span>
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <div class="w-55">
+          <button mat-button>
+            <mat-icon
+              class="m-0"
+              aria-hidden="false"
+              aria-label="Example home icon"
+              >star_border</mat-icon
+            >
+            <span class="shortlist-text">Shortlist</span>
+          </button>
+          <span class="f-r mt-2"><b>Like Her?</b></span>
+        </div>
+        <div class="w-45">
+          <span>
+            <button
+              class="likeBtn"
+              (click)="cardAnimation('swipeleft')"
+              mat-button
+            >
+              <mat-icon
+                class="m-0"
+                aria-hidden="false"
+                aria-label="Example home icon"
+                >check</mat-icon
+              >
+            </button>
+            <button
+              class="likeBtn"
+              (click)="cardAnimation('swiperight')"
+              mat-button
+            >
+              <mat-icon
+                class="m-0"
+                aria-hidden="false"
+                aria-label="Example home icon"
+                >close</mat-icon
+              >
+            </button>
+          </span>
+        </div>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

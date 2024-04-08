@@ -1,0 +1,65 @@
+.profileImage {
+  height: 400px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.verified-icon {
+  color: #2bade1;
+}
+.verified-icon mat-icon {
+  top: 9px !important;
+  position: relative;
+  font-size: 20px;
+}
+.premium-icon {
+  color: #eb5ee0;
+}
+.premium-icon mat-icon {
+  margin-left: 10px;
+  top: 9px !important;
+  position: relative;
+  font-size: 20px;
+}
+.m-0 {
+  margin: 0 !important;
+}
+.w-55 {
+  width: 55%;
+}
+.w-45 {
+  width: 45%;
+}
+.f-r {
+  float: right;
+}
+.shortlist-text {
+  position: relative;
+  top: 2px;
+}
+.likeBtn {
+  border: 1px solid !important;
+  border-radius: 25px !important;
+  margin: 2px;
+}
+.likeBtn:hover {
+  background: #f7a01a;
+}
+
+.profile-card-frame {
+  width: 350px;
+  height: 590px;
+  margin-top: 25px !important;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 2px 2px 2px #c0c0c0;
+}
